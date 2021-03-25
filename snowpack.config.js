@@ -2,20 +2,20 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    'src/dexie': { url: '/', resolve: true, static: false }
+    src: { url: '/', resolve: true, static: false }
   },
   packageOptions: {
     source: 'local'
   },
   devOptions: {},
   buildOptions: {
-    out: 'dist/dexie',
+    out: 'dist',
     sourcemap: false,
     clean: false
   },
   optimize: {
     target: 'es2020',
-    entrypoints: ['src/dexie/index.ts'],
+    entrypoints: ['src/index.ts'],
     minify: true,
     sourcemap: false,
     bundle: false
