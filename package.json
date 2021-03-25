@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/QBCart/EShop.Deps#readme",
   "scripts": {
-    "bundle:react": "snowpack build --config snowpack.react.js",
-    "bundle:dexie": "snowpack build --config snowpack.dexie.js",
+    "bundle:react": "rimraf dist/react && snowpack build --config snowpack.react.js",
+    "bundle:dexie": "rimraf dist/dexie && snowpack build --config snowpack.dexie.js",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write ."
   },
@@ -32,6 +32,7 @@
     "prettier": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2",
     "snowpack": "^3.1.2"
   },
   "husky": {
