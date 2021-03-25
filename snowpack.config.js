@@ -13,6 +13,8 @@ module.exports = {
   },
   optimize: {
     target: 'es2020',
+    entrypoints: ['src/react/index.ts'],
+    bundle: true,
     minify: true
   },
   plugins: []
