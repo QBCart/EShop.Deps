@@ -10,7 +10,8 @@ module.exports = {
   devOptions: {},
   buildOptions: {
     out: 'dist',
-    sourcemap: false
+    sourcemap: false,
+    clean: false
   },
   optimize: {
     target: 'es2020',
