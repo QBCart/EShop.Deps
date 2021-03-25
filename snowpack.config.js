@@ -9,13 +9,15 @@ module.exports = {
   },
   devOptions: {},
   buildOptions: {
-    out: 'dist'
+    out: 'dist',
+    sourcemap: false
   },
   optimize: {
     target: 'es2020',
     entrypoints: ['src/react/index.ts'],
-    bundle: true,
-    minify: true
+    minify: true,
+    sourcemap: false,
+    bundle: true
   },
   plugins: []
 };
