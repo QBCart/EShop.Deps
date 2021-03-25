@@ -19,12 +19,14 @@
   "homepage": "https://github.com/QBCart/EShop.Deps#readme",
   "scripts": {
     "bundle:react": "snowpack build --config snowpack.react.js",
+    "bundle:dexie": "snowpack build --config snowpack.dexie.js",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write ."
   },
   "devDependencies": {
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
+    "dexie": "^3.0.3",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
