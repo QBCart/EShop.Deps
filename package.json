@@ -18,9 +18,7 @@
   },
   "homepage": "https://github.com/QBCart/EShop.Deps#readme",
   "scripts": {
-    "build:react": "rimraf dist/react && snowpack build --config snowpack.react.js",
-    "build:dexie": "rimraf dist/dexie && snowpack build --config snowpack.dexie.js",
-    "build:dexie-react-hooks": "rimraf dist/dexie-react-hooks && snowpack build --config snowpack.dexie-react-hooks.js",
+    "build": "snowpack build",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write ."
   },
