@@ -18,7 +18,7 @@ module.exports = {
     entrypoints: ['src/react/index.ts'],
     minify: true,
     sourcemap: false,
-    bundle: true
+    bundle: false
   },
   plugins: []
 };
