@@ -1,0 +1,26 @@
+{
+  "name": "@qbcart/eshop-deps",
+  "version": "1.0.0",
+  "description": "Third-party libraries shared across the QBCart EShop ecosystem.",
+  "keywords": [
+    "qbcart",
+    "eshop",
+    "deps"
+  ],
+  "license": "MIT",
+  "author": "QbCart Inc.",
+  "contributors": [
+    "Allan Mobley",
+    "Michael Shea"
+  ],
+  "bugs": {
+    "url": "https://github.com/QBCart/EShop.Deps/issues"
+  },
+  "homepage": "https://github.com/QBCart/EShop.Deps#readme",
+  "scripts": {
+    "build": "snowpack build"
+  },
+  "devDependencies": {
+    "snowpack": "^3.1.2"
+  }
+}
