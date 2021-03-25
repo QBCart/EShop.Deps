@@ -20,13 +20,15 @@
   "scripts": {
     "build:react": "rimraf dist/react && snowpack build --config snowpack.react.js",
     "build:dexie": "rimraf dist/dexie && snowpack build --config snowpack.dexie.js",
+    "build:dexie-react-hooks": "rimraf dist/dexie-react-hooks && snowpack build --config snowpack.dexie-react-hooks.js",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write ."
   },
   "devDependencies": {
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
-    "dexie": "^3.0.3",
+    "dexie": "^3.1.0-alpha.9",
+    "dexie-react-hooks": "^1.0.6",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
