@@ -2,14 +2,14 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    src: { url: '/', resolve: true, static: false }
+    'src/react': { url: '/', resolve: true, static: false }
   },
   packageOptions: {
     source: 'local'
   },
   devOptions: {},
   buildOptions: {
-    out: 'dist',
+    out: 'dist/react',
     sourcemap: false,
     clean: false
   },
