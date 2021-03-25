@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/QBCart/EShop.Deps#readme",
   "scripts": {
-    "bundle:react": "rimraf dist/react && snowpack build --config snowpack.react.js",
-    "bundle:dexie": "rimraf dist/dexie && snowpack build --config snowpack.dexie.js",
+    "build:react": "rimraf dist/react && snowpack build --config snowpack.react.js",
+    "build:dexie": "rimraf dist/dexie && snowpack build --config snowpack.dexie.js",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write ."
   },
