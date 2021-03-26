@@ -11,7 +11,8 @@ module.exports = {
   buildOptions: {
     out: 'dist',
     sourcemap: false,
-    clean: true
+    clean: true,
+    metaUrlPath: '.'
   },
   optimize: {
     target: 'es2020',
