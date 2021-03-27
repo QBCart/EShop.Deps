@@ -2,16 +2,11 @@
 
 ### New
 
-- Third-party libraries shared across the QBCart EShop ecosystem.
-- React
-- React-Dom
-- Dexie
-- Dexie-React-Hooks
-- Styled-Components
+- Default export for Styled-Components
 
 ### Fixes
 
-- none
+- Added default export for Styled-Components
 
 ### Breaking
 
