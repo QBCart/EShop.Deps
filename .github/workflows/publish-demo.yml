@@ -6,7 +6,7 @@ name: Demo
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - 'src/**'
 
