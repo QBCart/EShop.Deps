@@ -2,9 +2,9 @@
 
 Third-party libraries shared across the QBCart EShop ecosystem.
 
-### GitHub Deployments
+### Deployments
 
-| Release | Publishing |
+| GitHub Release | Azure Storage |
 | --- | --- |
 | ![Latest](https://github.com/QBCart/EShop.Deps/workflows/Latest/badge.svg) | ![Demo](https://github.com/QBCart/EShop.Deps/workflows/Demo/badge.svg) |
 
