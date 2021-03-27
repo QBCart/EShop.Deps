@@ -1,1 +1,2 @@
-export { default as React } from 'react';
+import React from 'react';
+export default React;

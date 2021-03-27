@@ -1,4 +1,4 @@
-export { default as React } from 'react';
+export * from './react';
 export * from 'react-dom';
 export * from 'dexie';
 export * from 'dexie-react-hooks';
