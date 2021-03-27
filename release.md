@@ -1,6 +1,6 @@
 # <img align="center" src="https://avatars2.githubusercontent.com/u/45455933" width="96" height="96" /> EShop Deps
 
-## New
+### New
 
 - Third-party libraries shared across the QBCart EShop ecosystem.
 - React
@@ -9,11 +9,11 @@
 - Dexie-React-Hooks
 - Styled-Components
 
-## Fixes
+### Fixes
 
 - none
 
-# Breaking
+### Breaking
 
 - none
 
