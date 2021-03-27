@@ -4,8 +4,9 @@ Third-party libraries shared across the QBCart EShop ecosystem.
 
 ### Deployments
 
-| GitHub Release | Azure Storage |
-| --- | --- |
-| ![Latest](https://github.com/QBCart/EShop.Deps/workflows/Latest/badge.svg) | ![Demo](https://github.com/QBCart/EShop.Deps/workflows/Demo/badge.svg) |
+| GitHub Release | Azure Storage | Libraries |
+| --- | --- | --- |
+| ![Latest](https://github.com/QBCart/EShop.Deps/workflows/Latest/badge.svg) | ![Demo](https://github.com/QBCart/EShop.Deps/workflows/Demo/badge.svg) | ![react](https://img.shields.io/github/package-json/dependency-version/QBCart/EShop.Deps/dev/react/master?style=plastic) |
+|  |  | ![react-dom](https://img.shields.io/github/package-json/dependency-version/QBCart/EShop.Deps/dev/react-dom/master?style=plastic) |
 
 ###### Licensed under MIT - Copyright (c) 2020 QBCart Inc. All rights reserved.
