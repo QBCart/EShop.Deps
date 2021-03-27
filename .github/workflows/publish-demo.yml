@@ -5,10 +5,6 @@ name: Demo
 ################################################
 on:
   push:
-    branches:
-      - master
-    paths:
-      - 'src/**'
 
 ###################
 # Set Global Envs #
