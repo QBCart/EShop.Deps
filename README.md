@@ -12,4 +12,4 @@ Third-party libraries shared across the QBCart EShop ecosystem.
 | ![dexie-react-hooks](https://img.shields.io/github/package-json/dependency-version/QBCart/EShop.Deps/dev/dexie-react-hooks/master?style=plastic) | ^ | ^ |
 | ![styled-components](https://img.shields.io/github/package-json/dependency-version/QBCart/EShop.Deps/dev/styled-components/master?style=plastic) | ^ | ^ |
 
-###### Licensed under MIT - Copyright (c) 2020 QBCart Inc. All rights reserved.
+###### Licensed under MIT - Copyright (c) 2021 QBCart Inc. All rights reserved.
