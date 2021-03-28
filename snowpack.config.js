@@ -16,10 +16,8 @@ module.exports = {
   },
   optimize: {
     target: 'es2020',
-    entrypoints: ['src/index.ts'],
     minify: true,
-    sourcemap: false,
-    bundle: false
+    sourcemap: false
   },
   plugins: []
 };
