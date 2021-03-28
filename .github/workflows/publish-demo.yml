@@ -85,4 +85,6 @@ jobs:
       - name: Deploy Deps
         working-directory: .
         shell: bash
-        run: az storage blob upload-batch --account-name ${{ env.DEMO_STORAGE_NAME }} -s dist -d '$web\eshop\deps'
+        run: |
+          az storage blob delete-batch --account-name ${{ env.DEMO_STORAGE_NAME }} --source '$web' --pattern 'eshop/deps/*'
+          az storage blob upload-batch --account-name ${{ env.DEMO_STORAGE_NAME }} --source 'dist/pkg' --destination '$web/eshop/deps'
