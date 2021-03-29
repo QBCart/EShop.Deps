@@ -1,10 +1,9 @@
 {
-  "name": "@qbcart/eshop-deps",
+  "name": "@qbcart/deps",
   "version": "1.0.0",
-  "description": "Third-party libraries shared across the QBCart EShop ecosystem.",
+  "description": "Third-party libraries shared across the QBCart javascript ecosystem.",
   "keywords": [
     "qbcart",
-    "eshop",
     "deps"
   ],
   "license": "MIT",
@@ -14,9 +13,9 @@
     "Michael Shea"
   ],
   "bugs": {
-    "url": "https://github.com/QBCart/EShop.Deps/issues"
+    "url": "https://github.com/QBCart/Deps/issues"
   },
-  "homepage": "https://github.com/QBCart/EShop.Deps#readme",
+  "homepage": "https://github.com/QBCart/Deps#readme",
   "scripts": {
     "build": "snowpack build",
     "format:check": "prettier --check .",

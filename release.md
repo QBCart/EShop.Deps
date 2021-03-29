@@ -1,12 +1,17 @@
-# <img align="center" src="https://avatars2.githubusercontent.com/u/45455933" width="96" height="96" /> EShop Deps
+# <img align="center" src="https://avatars2.githubusercontent.com/u/45455933" width="96" height="96" /> Deps
 
 ### New
 
-- Default export for Styled-Components
+- Third-party libraries shared across the QBCart javascript ecosystem.
+- React
+- React-Dom
+- Dexie
+- Dexie-React-Hooks
+- Styled-Components
 
 ### Fixes
 
-- Added default export for Styled-Components
+- none
 
 ### Breaking
 
