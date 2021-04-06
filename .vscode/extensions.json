@@ -1,3 +1,10 @@
 {
-  "recommendations": ["aaron-bond.better-comments", "esbenp.prettier-vscode"]
+  "recommendations": [
+    "runem.lit-plugin",
+    "aaron-bond.better-comments",
+    "esbenp.prettier-vscode",
+    "jpoissonnier.vscode-styled-components",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag"
+  ]
 }
