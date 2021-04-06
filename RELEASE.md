@@ -2,12 +2,7 @@
 
 ### New
 
-- Third-party libraries shared across the QBCart javascript ecosystem.
-- React
-- React-Dom
-- Dexie
-- Dexie-React-Hooks
-- Styled-Components
+- none
 
 ### Fixes
 
