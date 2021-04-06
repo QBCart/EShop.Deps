@@ -2,7 +2,7 @@
 
 ### New
 
-- none
+- Scope deployment to output in publish_esm/pkg of build to cut out unnecessary redirect export files.
 
 ### Fixes
 
