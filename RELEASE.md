@@ -2,7 +2,7 @@
 
 ### New
 
-- none
+- Added react-paypal-js.
 
 ### Fixes
 
