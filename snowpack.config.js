@@ -19,5 +19,7 @@ module.exports = {
     minify: true,
     sourcemap: false
   },
-  plugins: []
+  plugins: [
+    ['@snowpack/plugin-sass', { compilerOptions: { loadPath: 'node_modules' } }]
+  ]
 };
