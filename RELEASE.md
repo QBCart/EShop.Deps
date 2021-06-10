@@ -10,6 +10,6 @@
 
 ### Breaking
 
-- none
+- Removed slick-carousel pkg
 
 ###### Licensed under MIT - Copyright (c) 2021 QBCart Inc. All rights reserved.
