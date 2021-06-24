@@ -2,7 +2,7 @@
 
 ### New
 
-- none
+- Update deps.
 
 ### Fixes
 
