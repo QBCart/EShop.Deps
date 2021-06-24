@@ -22,24 +22,24 @@
     "format:fix": "prettier --write ."
   },
   "devDependencies": {
-    "@paypal/react-paypal-js": "^6.0.0",
+    "@paypal/react-paypal-js": "^7.0.0",
     "@snowpack/plugin-sass": "^1.4.0",
-    "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.3",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
     "@types/react-slick": "^0.23.4",
-    "@types/styled-components": "^5.1.9",
-    "dexie": "^3.1.0-alpha.9",
+    "@types/styled-components": "^5.1.10",
+    "dexie": "^3.1.0-beta.13",
     "dexie-react-hooks": "^1.0.6",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
-    "minisearch": "^3.0.2",
-    "prettier": "^2.2.1",
+    "minisearch": "^3.0.3",
+    "prettier": "^2.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-slick": "^0.28.1",
     "rimraf": "^3.0.2",
-    "snowpack": "^3.2.2",
-    "styled-components": "^5.2.3"
+    "snowpack": "^3.6.1",
+    "styled-components": "^5.3.0"
   },
   "husky": {
     "hooks": {
