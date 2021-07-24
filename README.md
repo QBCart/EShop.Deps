@@ -10,9 +10,6 @@ Third-party libraries shared across the QBCart javascript ecosystem.
 | ![react-slick](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/react-slick/master?style=plastic) | ^ | ^ |
 | ![dexie](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/dexie/master?style=plastic) | ^ | ^ |
 | ![dexie-react-hooks](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/dexie-react-hooks/master?style=plastic) | ^ | ^ |
-| ![@material/mwc-drawer](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/@material/mwc-drawer/master?style=plastic) | ^ | ^ |
-| ![@material/mwc-top-app-bar](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/@material/mwc-top-app-bar/master?style=plastic) | ^ | ^ |
-| ![@material/mwc-icon-button](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/@material/mwc-icon-button/master?style=plastic) | ^ | ^ |
 | ![styled-components](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/styled-components/master?style=plastic) | ^ | ^ |
 | ![minisearch](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/minisearch/master?style=plastic) | ^ | ^ |
 | ![react-paypal-js](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/@paypal/react-paypal-js/master?style=plastic) | ^ | ^ |
