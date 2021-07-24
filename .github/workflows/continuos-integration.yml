@@ -1,22 +1,17 @@
-name: Demo
+name: CI
 
-######################################
-# Triggers when changes occur in src #
-######################################
+##############################################################
+# Triggers when push changes occur in specified branch paths #
+##############################################################
 on:
   push:
-    branches:
+    branches-ignore:
       - main
+      - '!v[0-9]+.[0-9]+.[0-9]+*'
     paths:
       - 'src/**'
-
-###################
-# Set Global Envs #
-###################
-env:
-  NODE_VERSION: '14'
-  DEMO_STORAGE_NAME: qbcdemo
-  SUBSCRIPTION_ID: ${{ secrets.DEMO_SUBSCRIPTION_ID }}
+      - 'package.json'
+      - 'snowpack.config.js'
 
 ############
 # Set Jobs #
@@ -25,8 +20,8 @@ jobs:
   ##############
   # Define Job #
   ##############
-  publish-demo:
-    name: Publish Demo
+  continuos-integration:
+    name: Continuos Integration
     runs-on: ubuntu-latest
 
     ##############
@@ -45,7 +40,7 @@ jobs:
       - name: Setup Node JS
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version: ${{ fromJSON(secrets.DEV_ESM).node }}
 
       ################
       # Install Deps #
@@ -54,6 +49,14 @@ jobs:
         working-directory: .
         shell: bash
         run: npm install
+
+      ################
+      # Check Format #
+      ################
+      - name: Check Format
+        working-directory: .
+        shell: bash
+        run: npm run format:check
 
       #############
       # Build ESM #
@@ -72,13 +75,13 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           allow-no-subscriptions: true
 
-      ###############################
-      # Publish ESM To Demo Storage #
-      ###############################
-      - name: Publish ESM To Demo Storage
+      ######################
+      # Publish To Dev ESM #
+      ######################
+      - name: Publish To Dev ESM
         working-directory: .
         shell: bash
         run: |
-          az account set --subscription ${{ env.SUBSCRIPTION_ID }}
-          az storage blob delete-batch --account-name ${{ env.DEMO_STORAGE_NAME }} --source '$web' --pattern 'deps/*'
-          az storage blob upload-batch --account-name ${{ env.DEMO_STORAGE_NAME }} --source 'publish_esm/pkg' --destination '$web/deps' --auth-mode key --content-cache 'no-store, max-age=0'
+          az account set --subscription ${{ fromJSON(secrets.DEV_ESM).subscriptionId }}
+          az storage blob delete-batch --account-name ${{ fromJSON(secrets.DEV_ESM).storageName }} --source '$web' --pattern deps/*'
+          az storage blob upload-batch --account-name ${{ fromJSON(secrets.DEV_ESM).storageName }} --source 'publish_esm/pkg' --destination '$web/deps' --auth-mode key --content-cache 'no-store, max-age=0'
