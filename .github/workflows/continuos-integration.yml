@@ -12,6 +12,7 @@ on:
       - 'src/**'
       - 'package.json'
       - 'snowpack.config.js'
+      - '.github/workflows/continuos-integration.yml'
 
 ############
 # Set Jobs #
