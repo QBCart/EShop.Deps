@@ -10,14 +10,6 @@ on:
       - 'v[0-9]+.[0-9]+.[0-9]+-beta.[0-9]+'
       - 'v[0-9]+.[0-9]+.[0-9]+'
 
-###################
-# Set Global Envs #
-###################
-env:
-  node_version: '14'
-  STORAGE_NAME: ${{ secrets.ESM_STORAGE_NAME }}
-  SUBSCRIPTION_ID: ${{ secrets.QBC_SUBSCRIPTION_ID }}
-
 ############
 # Set Jobs #
 ############
@@ -56,14 +48,9 @@ jobs:
       # Setup Node JS #
       #################
       - name: Setup Node JS
-        # Setup .npmrc file to publish to npm
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ env.NODE_VERSION }}
-          registry-url: https://registry.npmjs.org
-          scope: '@qbcart'
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+          node-version: ${{ fromJSON(secrets.PROD_ESM).node }}
 
       ################
       # Install Deps #
@@ -98,8 +85,8 @@ jobs:
         shell: bash
         run: |
           az account set --subscription ${{ env.SUBSCRIPTION_ID }}
-          az storage blob delete-batch --account-name ${{ env.STORAGE_NAME }} --source '$web' --pattern 'deps/*'
-          az storage blob upload-batch --account-name ${{ env.STORAGE_NAME }} --source 'publish_esm//pkg' --destination '$web/deps' --auth-mode key --content-cache 'max-age=86400, must-revalidate'
+          az storage blob delete-batch --account-name ${{ fromJSON(secrets.PROD_ESM).storageName }} --source '$web' --pattern 'deps/*'
+          az storage blob upload-batch --account-name ${{ fromJSON(secrets.PROD_ESM).storageName }} --source 'publish_esm//pkg' --destination '$web/deps' --auth-mode key --content-cache 'max-age=86400, must-revalidate'
 
       #########################
       # Create GitHub Release #
