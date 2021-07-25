@@ -5,6 +5,7 @@ Third-party libraries shared across the QBCart javascript ecosystem.
 | Libraries | Staging | Release |
 | --- | --- | --- |
 | ![lit](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/lit/master?style=plastic) | ![CI](https://github.com/QBCart/Deps/workflows/CI/badge.svg) | ![Release](https://github.com/QBCart/Deps/workflows/Release/badge.svg) |
+| ![lit-labs-task](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/@lit-labs/task/master?style=plastic) | ^ | ^ |
 | ![react](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/react/master?style=plastic) | ^ | ^ |
 | ![react-dom](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/react-dom/master?style=plastic) | ^ | ^ |
 | ![react-slick](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/react-slick/master?style=plastic) | ^ | ^ |
