@@ -2,7 +2,7 @@
 
 ### New
 
-- none
+- Added lit to the list of dependencies.
 
 ### Fixes
 
