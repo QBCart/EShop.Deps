@@ -87,6 +87,7 @@ jobs:
           az account set --subscription ${{ fromJSON(secrets.PROD_ESM).subscriptionId }}
           az storage blob delete-batch --account-name ${{ fromJSON(secrets.PROD_ESM).storageName }} --source '$web' --pattern 'deps/*'
           az storage blob upload-batch --account-name ${{ fromJSON(secrets.PROD_ESM).storageName }} --source 'publish_esm//pkg' --destination '$web/deps' --auth-mode key --content-cache 'max-age=86400, must-revalidate'
+          az storage blob upload-batch --account-name ${{ fromJSON(secrets.PROD_ESM).storageName }} --source 'publish_esm//pkg' --destination '$web/deps/pkg' --auth-mode key --content-cache 'max-age=86400, must-revalidate'
           az storage blob upload-batch --account-name ${{ fromJSON(secrets.PROD_ESM).storageName }} --source 'publish_esm/material' --destination '$web/deps/material' --auth-mode key --content-cache 'max-age=86400, must-revalidate'
 
       #########################
