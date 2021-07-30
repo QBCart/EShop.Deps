@@ -86,4 +86,4 @@ jobs:
           az account set --subscription ${{ fromJSON(secrets.DEV_ESM).subscriptionId }}
           az storage blob delete-batch --account-name ${{ fromJSON(secrets.DEV_ESM).storageName }} --source '$web' --pattern 'deps/*'
           az storage blob upload-batch --account-name ${{ fromJSON(secrets.DEV_ESM).storageName }} --source 'publish_esm/pkg' --destination '$web/deps' --auth-mode key --content-cache 'no-store, max-age=0'
-          az storage blob upload-batch --account-name ${{ fromJSON(secrets.DEV_ESM).storageName }} --source 'publish_esm/material' --destination '$web/deps' --auth-mode key --content-cache 'no-store, max-age=0'
+          az storage blob upload-batch --account-name ${{ fromJSON(secrets.DEV_ESM).storageName }} --source 'publish_esm/material' --destination '$web/deps/material' --auth-mode key --content-cache 'no-store, max-age=0'
