@@ -23,7 +23,9 @@
   },
   "devDependencies": {
     "@lit-labs/task": "^1.0.0-rc.2",
+    "@material/icon-button": "^12.0.0",
     "@paypal/react-paypal-js": "^7.2.0",
+    "@snowpack/plugin-sass": "^1.4.0",
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
     "@types/react-slick": "^0.23.5",
