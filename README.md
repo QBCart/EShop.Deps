@@ -14,5 +14,6 @@ Third-party libraries shared across the QBCart javascript ecosystem.
 | ![styled-components](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/styled-components/master?style=plastic) | ^ | ^ |
 | ![minisearch](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/minisearch/master?style=plastic) | ^ | ^ |
 | ![react-paypal-js](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/@paypal/react-paypal-js/master?style=plastic) | ^ | ^ |
+| ![material-icon-button](https://img.shields.io/github/package-json/dependency-version/QBCart/Deps/dev/@material/icon-button/master?style=plastic) | ^ | ^ |
 
 ###### Licensed under MIT - Copyright (c) 2021 QBCart Inc. All rights reserved.
